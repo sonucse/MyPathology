@@ -336,7 +336,7 @@ header {
       font-size: 1.1rem; }
 
 .doctor-message {
-  background-image: url("../images/slider/slider_2.jpg");
+  background-image: url("../images/gallery/gallery_02.jpg");
   background-attachment: fixed;
   background-size: cover; }
   .doctor-message .inner-lay {
@@ -501,3 +501,62 @@ header {
     @media screen and (max-width: 910px) {
       .services .b-b {
         border: 0px; } }
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #c4c4aa;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 310px;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 1rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+
+.product:hover {
+	box-shadow: 5px 15px 25px #0ee0eb;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+  border-radius: 50%;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
