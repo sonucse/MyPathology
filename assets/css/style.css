@@ -283,7 +283,7 @@ header {
   .key-features .kvxol {
     padding: 0px; }
   .key-features .single-key {
-    background-color: #FFF;
+    background-color: #FCF6F5FF;
     display: flex;
     margin-bottom: 30px;
     text-align: center;
@@ -469,7 +469,7 @@ header {
       padding: 30px 10px; } }
 
 .contact-us-single {
-  background-color: #FFF; }
+  background-color:#FBEAEB; }
   .contact-us-single .cop-ck {
     padding: 10px 30px; }
     .contact-us-single .cop-ck h2 {
@@ -560,3 +560,13 @@ header {
 .product a:hover{
 	transform: scale(1.1);
 }
+
+.chat{
+  padding-top: 20px;
+  color: rgb(27, 214, 235);
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .whatsapp_img{
+    width: 200px; } }
