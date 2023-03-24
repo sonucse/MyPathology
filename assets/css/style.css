@@ -469,7 +469,7 @@ header {
       padding: 30px 10px; } }
 
 .contact-us-single {
-  background-color:#FBEAEB; }
+  background: linear-gradient(to right, #70e1f5, #ffd194); }
   .contact-us-single .cop-ck {
     padding: 10px 30px; }
     .contact-us-single .cop-ck h2 {
@@ -511,7 +511,7 @@ header {
 
 .product{
 	overflow: hidden;
-	background: #c4c4aa;
+  background: linear-gradient(to right, #dab7d0, #bcdea0);
 	color: #21201e;
 	text-align: center;
 	width: 240px;
@@ -535,7 +535,7 @@ header {
 
 
 .product:hover {
-	box-shadow: 5px 15px 25px #0ee0eb;
+	box-shadow: 5px 15px 25px #eaceaa;
 }
 
 .product img {
@@ -563,10 +563,93 @@ header {
 
 .chat{
   padding-top: 20px;
-  color: rgb(27, 214, 235);
+  color: rgb(13, 155, 244);
   text-align: center;
 }
 
 @media screen and (max-width: 600px) {
   .whatsapp_img{
     width: 200px; } }
+
+/*Import Poppins font*/
+
+/*Fixed customizations for all cards*/
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+/*Card customization*/
+.wrapper .card{
+  background: #fff;
+  margin-bottom: 2rem;
+  width: calc(33% - 10px);
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+}
+/*Customize quote symbol in card*/
+.wrapper .card i.quote{
+  font-size: 20px;
+  color: #6d25e8;
+}
+/*Customize card content*/
+.wrapper .card .content{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+/*Customize Name Line*/
+.card .info .name{
+  font-weight: 600;
+  font-size: 17px;
+}
+/*Customize Work Line*/
+.card .info .work{
+  font-size: 16px;
+  font-weight: 500;
+  color: #894df1;
+}
+/*Customize Stars Symbols color,margin*/
+.card .info .stars{
+  margin-top: 2px;
+}
+.card .info .stars i{
+  color: #f0829a;
+}
+/*Customize photo in the cards*/
+.card .content .photo{
+  height: 75px;
+  width: 75px;
+  padding: 3px;
+  background: #e051cd;
+  border-radius: 50%;
+}
+.content .photo img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+.card:hover .content .photo img{
+  border-color: #fff;
+}
+/*Media queries to make the cards responsive */
+@media (max-width: 1045px) {
+  .wrapper .card{
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+@media (max-width: 702px) {
+  .wrapper .card{
+    width: 100%;
+  }
+}    
